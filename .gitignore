@@ -1,0 +1,69 @@
+# Laravel
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+.env
+.env.*.backup
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+/storage/logs
+/storage/framework/cache/data
+/storage/framework/sessions
+/storage/framework/views
+/storage/framework/testing
+
+# Laravel Mix/Vite
+/public/hot
+/public/mix-manifest.json
+/public/build
+/public/*.map
+/vite.config.js
+/vite.config.ts
+
+# Composer & NPM
+composer.lock
+yarn.lock
+npm-debug.log
+pnpm-debug.log
+package-lock.json
+
+# Ignorar SQLite o archivos de DB locales
+/database/*.sqlite
+
+# Ignorar archivos generados por IDEs
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+
+# Git
+*.orig
+*.swp
+*.swo
+
+# Laravel Telescope (si lo usas)
+storage/telescope
+
+# Laravel Debugbar
+debugbar
+
+# Archivos de respaldo comunes
+*.gz
+*.zip
+*.tar
+*.7z
+
+# Ignorar archivos de cobertura de pruebas
+coverage/
+htmlcov/
+.clover
+.php_cs.cache
+.php-cs-fixer.cache
