@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -9,3 +10,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::post('/api/registro','App\Http\Controllers\UserController@register');
+Route::post('/api/acceso','App\Http\Controllers\UserController@login');
+
+Route::resource('/api/carros', 'App\Http\Controllers\CarController');
